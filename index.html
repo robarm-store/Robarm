@@ -2,20 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="author" content="RobArm Armenia">
-    <meta name="author" content="RobArm Russia">
+    <meta name="author" content="RobArm Armenia, RobArm Russia">
     <meta name="description" content="From Dreams to Reality. RobArm offers the best for their clients. Market, Ads, Business, and many other.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RobArm</title>
     <link rel="icon" type="image/png" href="./RobArmLogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <style>
+      .red{
+        color: red;
+      }
       body{
         text-align: center;
         font-family: arial;
         align-items: center;
       }
-
-      .ad h1{
+      .h1{
         font-size: 40px;
         font-family: cursive;
       }
@@ -29,7 +31,7 @@
         color: orange;
       }
       .text{
-         font-family: copperplate;
+         font-family: Copperplate, 'Cinzel';
          font-size: 24px;
       }
       .service a{
@@ -37,10 +39,11 @@
         font-family: papyrus;
         font-size: 26px;
         margin: 16px;
+        text-decoration: none;
+        transition: text-decoration 0.3s ease-in-out;
       }
-      .div h1{
-        font-size: 52px;
-        font-family: copperplate;
+      .service a:hover{
+        text-decoration: underline;
       }
       button{
         background-color: orange;
@@ -50,6 +53,7 @@
         transition: all 0.3s ease-in-out;
         color: white;
         font-size: 12px;
+        margin: 20px;
       }
       button:hover{
         transform: translateY(-10px);
@@ -58,14 +62,12 @@
     </style>
   </head>
   <body>
-    <div class="image-container">
-      <img src="./RobArmLogo.png">
-      <h2>Simply the best.</h2>
-    </div>
+    <img src="./RobArmLogo.png">
+    <h2>Simply the best.</h2>
     <div class="service">
       <h3 class="text">Rob<span class="red">A</span><span class="blue">r</span><span class="orange">m</span> Restaurants</h3>
-      <a href="./restaurants-category-chipmix">Chip-Mix</a>
-      <a href="./restaurants-.html">example</a>
+      <a href="./restaurants-category-chipmix.html">Chip-Mix</a>
+      <a href="./restaurants-.html">Deserts</a>
       <a href="./restaurants.html">example</a>
     </div>
     <div class="service">
@@ -75,11 +77,13 @@
       <a href="./market-category-limited.html">Limited</a>
     </div>
     <div class="ad">
-      <h1 clas="h1">Your ad here!</h1>
-      <h3>+37491956789 Whatsapp or robarm.info@gmail.com</h3>
-    </div>
+      <h1 class="h1">Your ad here!</h1>
+      <h3>+37491956789 Whatsapp or <span class="red">robarm.info@gmail.com</span></h3>
+    </div><br>
     <div>
-      <button>Contact us</button>
+      <button onclick="contactUs()">Contact us</button>
+      <button onclick="knowAboutUs()">About us</button>
     </div>
+    <script src="./file1.js"></script>
   </body>
 </html>
